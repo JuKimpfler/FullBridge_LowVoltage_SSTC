@@ -10,7 +10,7 @@ Modifiziert: Vollbrücke · 48–60 V DC · Arduino-Interrupter · LWL-Strecke (
 ## ⚠️ Sicherheitshinweise
 
 > **Die Sekundärseite eines Tesla Coils erzeugt Hochspannung und starke HF-Felder.**\
-> Auch bei 48 V Einspeisung sind die Ausgangsspannungen der Sekundärspule lebensgefährlich.\
+> Auch bei 48 V Einspeisung sind die Ausgangsspannungen der Sekundärspule gefährlich.\
 > Schrittmacher- und Implantatträger: **Mindestabstand 3 m**.\
 > Elektronik in der Nähe kann durch HF-Einstrahlung beschädigt werden.\
 > Nie alleine arbeiten. Kondensatoren vor Arbeiten am Gerät entladen.
@@ -82,7 +82,7 @@ Modifiziert: Vollbrücke · 48–60 V DC · Arduino-Interrupter · LWL-Strecke (
 | C-Bus | 4700 µF / 100 V Elko | 1–2 | Ripplestrom-Rating beachten, so nah wie möglich an Brücke |
 | C-Snubber | 100 nF / 250 V Folie | 4 | Direkt Gate-Source je MOSFET |
 | C-Prim | 4,7 µF / 250 V MKP Folie | 1 | DC-Blocking, in Serie mit Primärspule |
-| TVS Gate | 15 V bidirektional | 4 | Zwischen Gate und Source je MOSFET |
+| TVS Gate | 16 V Zener P4SMAJ16A | 8 | Zwischen Gate und Source je MOSFET ( in beide Richtungen (bidirektional) |
 | R-Gate | 10 kΩ | 4 | Gate nach Source, Pulldown |
 | R-Gate-Serie | 6,8 Ω | 4 | In Serie Gate-Leitung vom GDT |
 | D-Gate | 1N4148 | 4 | Parallel zu R-Gate-Serie, Kathode Richtung Gate |
